@@ -32,13 +32,22 @@ Let's talk about
 
 Building a linear model, showing correlation between Vitamin C and teeth growth
 
-```{r, echo=FALSE}
-data(ToothGrowth)
-```
 
-```{r}
+
+
+```r
 model <- lm(len ~ ., data=ToothGrowth)
 print(model)
+```
+
+```
+## 
+## Call:
+## lm(formula = len ~ ., data = ToothGrowth)
+## 
+## Coefficients:
+## (Intercept)       suppVC         dose  
+##       9.272       -3.700        9.764
 ```
 
 ---
